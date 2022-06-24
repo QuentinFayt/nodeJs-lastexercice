@@ -1,0 +1,30 @@
+<body>
+<%- include("nav"); -%>
+    <% switch(page){
+        case "accueil": %>
+            <%- include("../main/accueil"); -%>
+            <% break;
+        case "presentation": %>
+            <%- include("../main/presentation"); -%>
+            <% break;
+        case "realisations": %>
+            <%- include("../main/realisations"); -%>
+            <% break;
+        case "aventure": %>
+            <%- include("../main/aventure"); -%>
+            <% break;
+        case "contact": %>
+            <%- include("../main/contact"); -%>
+            <% break;
+        case "formSent": %>
+            <%- include("../main/formSent"); -%>
+            <% break;
+        case "messages": %>
+            <%- include("../main/messages"); -%>
+            <% break;
+        case "404" : %>
+            <%- include("../main/erreur404"); -%>
+        <% break;
+        } %>
+<%- include("footer"); -%>
+</body>

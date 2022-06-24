@@ -1,0 +1,17 @@
+<header>
+    <h1>Formulaire de contact</h1>
+</header>
+<section>
+    <article>
+        <form method="post" action="../contact/create">
+            <label for="nom">Nom:</label>
+            <input type="text" name="nom" id="nom" required placeholder="Votre nom"/>
+            <label for="email">Mail:</label>
+            <input type="email" name="email" id="email" required placeholder="Votre mail"/>
+            <label for="message">Message:</label>
+            <textarea name="msg" id="message" required placeholder="Votre message"></textarea>
+            <input type="submit">
+        </form>
+    </article>
+    <p><a href="../contact">Revenir au messages</a></p>
+</section>

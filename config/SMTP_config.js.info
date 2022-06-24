@@ -1,0 +1,5 @@
+module.exports = {
+    ADMIN_LOGIN   : "",
+    ADMIN_USER    : "",
+    ADMIN_PASSWORD: "",
+}

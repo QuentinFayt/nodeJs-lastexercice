@@ -1,0 +1,7 @@
+<nav>
+    <a href=".." <%= page === "accueil" ? "class=active" : "" %>>Accueil</a>
+    <a href="../p=presentation" <%= page === "presentation" ? "class=active" : "" %>>Je me présente</a>
+    <a href="../p=aventure" <%= page === "aventure" ? "class=active" : "" %>>Aventure Digitale</a>
+    <a href="../p=realisations" <%= page === "realisations" ? "class=active" : "" %>>Mes réalisations</a>
+    <a href="../contact" <%= page === "contact" || page === "formSent" ? "class=active" : "" %>>Contact</a>
+</nav>

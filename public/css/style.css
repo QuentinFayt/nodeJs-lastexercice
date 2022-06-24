@@ -1,0 +1,425 @@
+/* Tout le contenu est centré sur une largeur de 800 pixels */
+
+nav, header, section, footer {
+    width  : 800px;
+    margin : 0 auto;
+}
+
+nav {
+    display         : flex;
+    justify-content : center;
+}
+
+/* ----- MENU DE NAVIGATION ----- */
+
+nav a, input[type="submit"] {
+    display         : inline-block;
+    width           : fit-content;
+    height          : 50px;
+    text-decoration : none;
+    text-align      : center;
+    font-family     : arial;
+    font-size       : 20px;
+    line-height     : 50px;
+    color           : #00BEB7;
+    border          : 1px solid #00BEB7;
+    border-radius   : 10px;
+    box-shadow      : 5px 5px 10px #888888;
+    margin          : 0px 5px;
+    padding         : 0 14px;
+}
+
+nav a:hover, input[type="submit"]:hover {
+    background-color : #00BEB7;
+    color            : white;
+}
+
+.active {
+    font-weight : bold;
+}
+
+/* ----- ENTETE ----- */
+
+header h1 {
+    text-align     : center;
+    text-transform : uppercase;
+    letter-spacing : 5px;
+    font-family    : Arial;
+    color          : #00BEB7;
+}
+
+/* ----- SECTION ----- */
+
+/* ----- SECTION : Accueil ----- */
+
+.au-centre {
+    text-align : center;
+}
+
+#bienvenue {
+    margin-bottom : 50px;
+}
+
+#bienvenue a {
+    display : block;
+    width   : 231px;
+    margin  : 0 auto;
+}
+
+#bienvenue strong a {
+    display         : inline;
+    text-decoration : none;
+    color           : black;
+}
+
+#bienvenue strong a:hover {
+    text-decoration : underline;
+    color           : #00BEB7;
+}
+
+#choix {
+    width  : 756px;
+    height : 185px;
+    margin : 0 auto;
+}
+
+.bloc {
+    float         : left;
+    border        : 1px solid #00BEB7;
+    border-radius : 20px;
+    padding       : 10px 10px 20px 10px;
+    margin        : 0 15px;
+    height        : 165px;
+    box-shadow    : 5px 5px 10px #888888;
+    transition    : transform .4s;
+}
+
+.bloc:hover {
+    transform : scale(1.1);
+}
+
+.bloc h3 {
+    text-align     : center;
+    margin         : 0;
+    padding-bottom : 10px;
+}
+
+.bloc h3 a {
+    text-decoration : none;
+    color           : black;
+}
+
+.bloc a img {
+    display : block;
+    width   : 200px;
+    height  : auto;
+}
+
+/* ----- SECTION : Je me présente ----- */
+
+#maphoto {
+    float         : left;
+    width         : 380px;
+    height        : 380px;
+    margin-right  : 20px;
+    margin-bottom : 20px;
+}
+
+#mapresentation {
+    text-align : justify;
+}
+
+/* ----- SECTION : Aventure digitale ----- */
+
+section h2 {
+    color      : #00BEB7;
+    text-align : center;
+}
+
+section h2 a {
+    color : #00BEB7;
+}
+
+section h2 a:hover {
+    color            : white;
+    background-color : #00BEB7;
+    border-radius    : 2px;
+}
+
+#chapitres {
+    width  : 700px;
+    height : 350px;
+    margin : 0 auto;
+}
+
+#chapitres img {
+    display : block;
+    width   : 350px;
+    float   : left;
+}
+
+#chapitres ul {
+    list-style  : none;
+    margin-top  : 40px;
+    padding-top : 40px;
+}
+
+#chapitres ul li {
+    text-indent : 50px;
+}
+
+#chapitres ul li a {
+    text-decoration : none;
+    color           : #00BEB7;
+    font-family     : Arial;
+    font-size       : 150%;
+    display         : block;
+    height          : 40px;
+    line-height     : 40px;
+}
+
+#chapitres ul li a:hover {
+    font-weight : bold;
+}
+
+.top {
+    text-align    : right;
+    border-bottom : 2px solid #00BEB7;
+}
+
+.top a {
+    text-decoration : none;
+    color           : #00BEB7;
+    text-transform  : uppercase;
+}
+
+.aventure h3 {
+    width : 200px;
+    float : left;
+    color : transparent;
+}
+
+.aventure p {
+    padding-left : 200px;
+}
+
+.aventure ul {
+    padding-left : 220px;
+}
+
+#formation {
+    background-image  : url(../../images/formation.jpg);
+    background-repeat : no-repeat;
+}
+
+#objectifs {
+    background-image  : url(../images/objectifs.png);
+    background-repeat : no-repeat;
+}
+
+#acces {
+    background-image  : url(../images/acces.png);
+    background-repeat : no-repeat;
+}
+
+#contenu {
+    background-image  : url(../images/contenu.png);
+    background-repeat : no-repeat;
+}
+
+#tests {
+    background-image  : url(../images/tests.jpg);
+    background-repeat : no-repeat;
+}
+
+#lieu {
+    background-image  : url(../images/lieu.png);
+    background-repeat : no-repeat;
+    margin-top        : 0;
+    padding-bottom    : 30px;
+}
+
+#contrat {
+    background-image  : url(../images/contrat.png);
+    background-repeat : no-repeat;
+}
+
+/* ----- SECTION : Mes réalisations ----- */
+
+.realisation img {
+    display : inline-block;
+    width   : 240px;
+    height  : auto;
+    margin  : 0 10px;
+    border  : 1px solid lightgrey;
+}
+
+.realisation video {
+    width  : 360px;
+    height : auto;
+    margin : 0 15px 0 20px;
+}
+
+/* ----- FOOTER ----- */
+
+footer {
+    clear      : both;
+    height     : 65px;
+    margin-top : 50px;
+}
+
+footer div {
+}
+
+#partenaires {
+    width  : 640px;
+    height : 64px;
+    float  : left;
+}
+
+#copyright {
+    width  : 150px;
+    height : 44px;
+    float  : right;
+}
+
+#copyright p {
+    font-family : Arial;
+    font-size   : 18px;
+    height      : 64px;
+    line-height : 44px;
+    font-weight : bold;
+    padding     : 10px;
+    margin      : 0;
+    color       : #00BEB7;
+}
+
+.userMessage {
+    width       : -webkit-fill-available;
+    white-space : pre-wrap;
+}
+
+form {
+    display        : flex;
+    flex-direction : column;
+}
+
+form label,
+form input,
+form textarea {
+    margin-bottom : 1em;
+}
+
+form input,
+form textarea {
+    border        : 1px solid #00BEB7;
+    border-radius : 10px;
+    padding       : 5px;
+}
+
+form label {
+    text-transform : uppercase;
+    font-weight    : bolder;
+    color          : #00BEB7;
+}
+
+form input {
+    height : 20px;
+}
+
+form textarea {
+    resize : none;
+    height : 150px;
+}
+
+input[type="submit"] {
+    width      : auto;
+    margin     : 0;
+    padding    : 0;
+    background : white;
+}
+
+.answer {
+    color : black;
+}
+
+.answer span, .color {
+    color : #00BEB7;
+}
+
+.error {
+    margin      : 2em auto;
+    padding     : 2em;
+    font-size   : x-large;
+    font-weight : bolder;
+    text-align  : center;
+}
+
+.messages {
+    height         : 50vh;
+    padding        : 1em;
+    overflow-y     : scroll;
+    display        : flex;
+    gap            : 1em;
+    flex-direction : column;
+}
+
+.messages article {
+    font-family           : arial;
+    color                 : #00BEB7;
+    border                : 1px solid #00BEB7;
+    border-radius         : 10px;
+    box-shadow            : 5px 5px 10px #888888;
+    padding               : 1em;
+    display               : grid;
+    grid-template-areas   :
+    "nom"
+    "title"
+    "message"
+    "date";
+    grid-template-columns : 1fr;
+    grid-template-rows    : 1fr;
+    gap                   : 1em;
+}
+
+.notMessages h1 {
+    text-align : center;
+}
+
+.nom {
+    grid-area : nom;
+    margin    : 0;
+}
+
+.message {
+    grid-area      : message;
+    margin         : 0;
+    border-bottom  : 1px solid #00BEB7;
+    padding-bottom : 1em;
+}
+
+.title {
+    grid-area   : title;
+    margin      : 0;
+    color       : black;
+    border-top  : 1px solid #00BEB7;
+    padding-top : 1em;
+}
+
+.date {
+    grid-area  : date;
+    margin     : 0;
+    font-size  : 10px;
+    text-align : end;
+}
+
+.black {
+    color : black;
+}
+
+.error span {
+    color           : #00BEB7;
+    text-decoration : underline;
+    white-space     : pre-wrap;
+    word-wrap       : break-word;
+}

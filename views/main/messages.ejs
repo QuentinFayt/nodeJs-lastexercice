@@ -1,0 +1,23 @@
+<header>
+    <h1>Précédent messages:</h1>
+</header>
+<section>
+    <% if(datas.length){ %>
+        <div class="messages">
+            <% datas.forEach((data)=>{ %>
+                <article>
+                    <p class="nom"><span class="black">Écrit par </span><%- data["nom"] %></p>
+                    <p class="title">Message :</p>
+                    <p class="message"><%- data["message"] %></p>
+                    <p class="date"><span class="black">Écrit le </span><%- moment(data["datemessage"]).format("dddd LL à HH:mm:ss") %></p>
+                </article>
+            <% }) %>
+        </div>
+    <% }else{ %>
+        <article class="notMessages">
+            <h1>Pas encore de messages!</h1>
+        </article>
+    <% } %>
+
+    <p><a href="./contact/post">Laissez un message?</a></p>
+</section>

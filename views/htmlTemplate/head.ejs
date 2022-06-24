@@ -1,0 +1,8 @@
+<head>
+    <meta charset="UTF-8">
+    <title><%- page === "formSent" ? "Message envoyé!" : page[0].toUpperCase() + page.substring(1, page.length) -%></title>
+    <link type="text/css" rel="stylesheet" href="../css/style.css"/>
+    <% if(page === "realisations"){ %>
+        <link href="lightbox/css/lightbox.min.css" rel="stylesheet"/>
+    <% } %>
+</head>
